@@ -1,0 +1,13 @@
+        ];
+        markers.forEach(function(m) { markerCluster.addLayer(m); });
+        map.addLayer(markerCluster);
+        document.getElementById('banner').innerHTML = markers.length + ' POPs';
+      }
+      window.addEventListener('load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="banner"></div>
+  </body>
+</html>
